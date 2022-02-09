@@ -1,0 +1,11 @@
+﻿
+
+to handle launch
+	log "launching"
+end launch
+
+to handle Override
+	log "override"
+put ("a","c","b")  as list into var
+return var
+end Override
