@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 
 
@@ -5,3 +6,16 @@
 put ("a","c","b")  as list into var
 log var 
 
+=======
+﻿
+
+to handle launch
+	log "launching"
+end launch
+
+to handle Override
+	log "override"
+put ("a","c","b")  as list into var
+return var
+end Override
+>>>>>>> d3824dd8ca69f2a3e97b4a85b8c00fc8b51a0d3e
