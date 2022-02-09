@@ -1,0 +1,7 @@
+﻿
+
+
+	log "override"
+put ("a","c","b")  as list into var
+log var
+
