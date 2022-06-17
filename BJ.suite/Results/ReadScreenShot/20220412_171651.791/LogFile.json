@@ -1,0 +1,105 @@
+{
+	"entries": [
+		{
+				"message": "Running ReadScreenShot.script",
+				"identifier": "START",
+				"timestamp": "2022-04-12 17:16:51.801 +0530"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:16:52.001 +0530",
+				"message": "E:\\bjcheck\\BJ's\\In1.jpg:0",
+				"scriptName": "ReadScreenShot.script",
+				"handlerLine": 7,
+				"identifier": "connect"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:16:52.899 +0530",
+				"scriptName": "ReadScreenShot.script",
+				"message": "found at (506, 308)",
+				"image": "(TEXT:\"ENTER FOR A CHANCE TO WIN A\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:16:53.403 +0530",
+				"message": "(306,283,706,678)",
+				"scriptName": "ReadScreenShot.script",
+				"handlerLine": 10,
+				"identifier": "readtext"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:16:53.409 +0530",
+				"message": "[\"ENTER FOR A CHANCE TO WIN A $500 BJ's Gift Card See bjs con/feedbeck for survey I rules •0404335411405 MEMBER copy « Il\"]",
+				"scriptName": "ReadScreenShot.script",
+				"handlerLine": 14,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:16:54.419 +0530",
+				"scriptName": "ReadScreenShot.script",
+				"message": "found at (520, 620)",
+				"image": "(TEXT:\"PAID\")",
+				"handlerLine": 16,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:16:54.674 +0530",
+				"message": "(380,605,670,690)",
+				"scriptName": "ReadScreenShot.script",
+				"handlerLine": 18,
+				"identifier": "readtext"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:16:54.680 +0530",
+				"message": "[@\"\\tPAID  MOr-t ,\\t0^1 /O-1 /2O22 03 « OO F»M\"]",
+				"scriptName": "ReadScreenShot.script",
+				"handlerLine": 21,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:17:08.953 +0530",
+				"scriptName": "ReadScreenShot.script",
+				"message": "Unable to Find Image (TEXT:\"By being a BJ's MEMBER\"). Text not found.",
+				"image": "(TEXT:\"By being a BJ's MEMBER\")",
+				"handlerLine": 24,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:17:22.452 +0530",
+				"scriptName": "ReadScreenShot.script",
+				"message": "Unable to Find Image (TEXT:\"MEMBERSHIP ID\"). Text not found.",
+				"image": "(TEXT:\"MEMBERSHIP ID\")",
+				"handlerLine": 32,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_readscreenshot",
+				"timestamp": "2022-04-12 17:17:25.095 +0530",
+				"message": "Searching For Image: OCR Error: Internal error",
+				"scriptName": "ReadScreenShot.script",
+				"handlerLine": 40,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"33.579\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2022-04-12 17:16:51 +0530\", Successes:\"0\", TestCase:\"ReadScreenShot.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2022-04-12 17:17:25.387 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Image Search Error: imagefound Error - Searching For Image: OCR Error: Internal error -- Execution Time 0:00:33 ReadScreenShot.script",
+				"identifier": "FAILURE",
+				"timestamp": "2022-04-12 17:17:25.810 +0530"
+			}
+	],
+	"createdTimestamp": "2022-04-12 17:16:51.807 +0530"
+}

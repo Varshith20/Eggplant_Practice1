@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="ReadScreenShot_script" package="BJ.suite" timestamp="2022-04-13 10:33:18.802 +0530"
+ tests="1"  failures="0" errors="0" time="1.927000">
+  <properties>
+   <property name="RunDate" value="2022-04-13 10:33:18.802 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="ReadScreenShot.script" assertions="1" status="failure"  time="1.911">
+    <failure type="FAILURE" message="See main script" />
+  </testcase>
+ </testsuite>
+</testsuites>

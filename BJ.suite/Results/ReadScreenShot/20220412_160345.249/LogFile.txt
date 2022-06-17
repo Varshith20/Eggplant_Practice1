@@ -1,0 +1,13 @@
+﻿2022-04-12 16:03:45.257 +0530	START		Running ReadScreenShot.script
+2022-04-12 16:03:45.700 +0530	connect		E:\bjcheck\BJ's\In1.jpg:0	8	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:03:46.780 +0530	imagefound	(TEXT:"ENTER FOR A CHANCE TO WIN A")	found at (506, 308)	9	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:03:47.340 +0530	readtext		(306,283,706,678)	11	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:03:47.355 +0530	Log		["ENTER FOR A CHANCE TO WIN A $500 BJ's Gift Card See bjs con/feedbeck for survey I rules •0404335411405 MEMBER copy « Il"]	15	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:03:48.374 +0530	imagefound	(TEXT:"PAID")	found at (520, 620)	17	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:03:48.605 +0530	readtext		(380,605,670,690)	19	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:03:48.612 +0530	Log		[@"\tPAID  MOr-t ,\t0^1 /O-1 /2O22 03 « OO F»M"]	22	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:04:01.161 +0530	imagefound	(TEXT:"By being a BJ's MEMBER")	Unable to Find Image (TEXT:"By being a BJ's MEMBER"). Text not found.	25	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:04:13.389 +0530	imagefound	(TEXT:"MEMBERSHIP ID")	Unable to Find Image (TEXT:"MEMBERSHIP ID"). Text not found.	33	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:04:16.247 +0530	Exception		Searching For Image: OCR Error: Internal error	41	on_readscreenshot	ReadScreenShot.script
+2022-04-12 16:04:16.679 +0530	EndTestCase		(Duration:"31.414", Errors:"1", Exceptions:"1", StartTime:"2022-04-12 16:03:45 +0530", Successes:"0", TestCase:"ReadScreenShot.script", Warnings:"0")
+2022-04-12 16:04:17.157 +0530	FAILURE	Screen_Error.png	Image Search Error: imagefound Error - Searching For Image: OCR Error: Internal error -- Execution Time 0:00:31 ReadScreenShot.script
