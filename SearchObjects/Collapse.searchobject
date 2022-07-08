@@ -1,0 +1,61 @@
+{
+	"originalcapturelocation": [
+		539,
+		1474,
+		54,
+		33
+	],
+	"lastmodifieddate": 1633615935.776,
+	"createddate": 1633505180.773,
+	"name": "Collapse",
+	"lastfounddate": 1633615171.1670001,
+	"ocrcapturestring": "\\z",
+	"lastfoundlocation": [
+		542,
+		1476,
+		46,
+		29
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 7000,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[27,16]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"device_os": "Android",
+					"manufacturer": "samsung",
+					"SystemNative2BuildNumber": "N/A",
+					"EggSensorBufferSize": "1024",
+					"type": "SystemNative2",
+					"device": "x1s",
+					"EggSensorCompileTime": "RELEASE",
+					"product": "x1sxx",
+					"EggSensorBuildNumber": "2107292126",
+					"device_os_version": "11",
+					"protocol_version": "2.6",
+					"SystemNative2BuildTime": "Jul 29 2021, 21:30:43",
+					"endianess": "little-endian",
+					"serial": "RF8N315319K"
+				},
+				"name": "Collapse.png",
+				"connectionname": "VarMobile",
+				"type": 1,
+				"capturerect": [
+					539,
+					1474,
+					54,
+					33
+				],
+				"connectionserverid": "192.168.1.230",
+				"capturedocrtext": "\\z"
+			}
+	]
+}

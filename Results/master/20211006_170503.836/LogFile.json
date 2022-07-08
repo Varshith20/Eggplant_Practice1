@@ -1,0 +1,218 @@
+{
+	"entries": [
+		{
+				"message": "Running master.script",
+				"identifier": "START",
+				"timestamp": "2021-10-06 17:05:03.844 +0530"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:04.564 +0530",
+				"message": "Swiped up from (540, 1680) to (540, 720)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 1,
+				"identifier": "swipeup"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:04.680 +0530",
+				"message": "SEARCHRECTANGLE = [[0,0],[1080,1200]]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:10.070 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (415, 547)",
+				"image": "(TEXT:\"Google\")",
+				"handlerLine": 4,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:12.775 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (542, 1068)",
+				"image": "(TEXT:\"Chrome\")",
+				"handlerLine": 5,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:15.361 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (994, 160)",
+				"image": "3dots",
+				"handlerLine": 6,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:17.269 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (569, 289)",
+				"image": "(TEXT:\"New tab\")",
+				"handlerLine": 7,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:19.979 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (384, 770)",
+				"image": "(TEXT:\"Search or type web address\")",
+				"handlerLine": 8,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:20.280 +0530",
+				"message": "at (384, 770)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 9,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:22.532 +0530",
+				"message": "https://development-web-belk.demandware.net/[return]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 10,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:05:22.532 +0530",
+				"message": "SEARCHRECTANGLE = []",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 11,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:05:22.971 +0530",
+				"message": "SEARCHRECTANGLE = [[0,1200],[1080,2400]]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:05:44.591 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (542, 1635)",
+				"image": "(TEXT:\"Decline offer\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:05:44.861 +0530",
+				"message": "at (542, 1635)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 4,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:02.924 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"English\"). Text not found.",
+				"image": "(TEXT:\"English\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:02.946 +0530",
+				"message": "Laguage selection is not visible",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 12,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:05.087 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (541, 2166)",
+				"image": "(TEXT:\"See all offers\")",
+				"handlerLine": 14,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:06.136 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (566, 1490)",
+				"image": "Collapse",
+				"handlerLine": 15,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:08.006 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (356, 162)",
+				"image": "(TEXT:\"belk\")",
+				"handlerLine": 19,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:08.307 +0530",
+				"message": "SEARCHRECTANGLE = [[0,0],[540,2400]]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 20,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:10.132 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (92, 385)",
+				"image": "GuidedMenu",
+				"handlerLine": 21,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:18.386 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (78, 1030)",
+				"image": "(TEXT:\"Men\")",
+				"handlerLine": 22,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:20.422 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (155, 1875)",
+				"image": "(TEXT:\"Shoes\")",
+				"handlerLine": 23,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:06:33.649 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Casual Shoes\"). Text not found.",
+				"image": "(TEXT:\"Casual Shoes\")",
+				"handlerLine": 24,
+				"identifier": "imagefound"
+			},
+		{
+				"message": "(Duration:\"90.125\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2021-10-06 17:05:03 +0530\", Successes:\"0\", TestCase:\"master.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2021-10-06 17:06:33.976 +0530"
+			},
+		{
+				"message": "Execution Time 0:01:30 master.script",
+				"identifier": "ABORTED",
+				"timestamp": "2021-10-06 17:06:34.065 +0530"
+			}
+	],
+	"createdTimestamp": "2021-10-06 17:05:03.850 +0530"
+}

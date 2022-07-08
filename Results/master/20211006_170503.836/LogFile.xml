@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="master_script" package="Belk.suite" timestamp="2021-10-06 17:05:03.836 +0530"
+ tests="1"  failures="0" errors="0" time="90.140000">
+  <properties>
+   <property name="RunDate" value="2021-10-06 17:05:03.836 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="master.script" assertions="1" status="failure"  time="90.125">
+    <failure type="FAILURE" message="See main script" />
+  </testcase>
+ </testsuite>
+</testsuites>

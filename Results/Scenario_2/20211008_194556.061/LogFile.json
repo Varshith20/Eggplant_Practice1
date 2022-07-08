@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running Scenario_2.script",
+				"identifier": "START",
+				"timestamp": "2021-10-08 19:45:56.077 +0530"
+			},
+		{
+				"message": "(Duration:\"0.004\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2021-10-08 19:45:56 +0530\", Successes:\"1\", TestCase:\"Scenario_2.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2021-10-08 19:45:56.092 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 Scenario_2.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2021-10-08 19:45:56.500 +0530"
+			}
+	],
+	"createdTimestamp": "2021-10-08 19:45:56.084 +0530"
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="Scenario_2">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2021-10-07 16:03:18 +0530</FirstRun>
+  <LastRun>2021-10-08 19:45:56 +0530</LastRun>
+  <TotalTimeOnSuccess>0.061000</TotalTimeOnSuccess>
+ </script>
+</statistics>

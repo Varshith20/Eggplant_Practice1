@@ -1,0 +1,384 @@
+{
+	"entries": [
+		{
+				"message": "Running master.script",
+				"identifier": "START",
+				"timestamp": "2021-10-06 17:19:35.694 +0530"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:36.398 +0530",
+				"message": "Swiped up from (540, 1680) to (540, 720)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 1,
+				"identifier": "swipeup"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:36.580 +0530",
+				"message": "SEARCHRECTANGLE = [[0,0],[1080,1200]]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:40.156 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (415, 547)",
+				"image": "(TEXT:\"Google\")",
+				"handlerLine": 4,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:42.372 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (542, 1068)",
+				"image": "(TEXT:\"Chrome\")",
+				"handlerLine": 5,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:45.163 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (994, 160)",
+				"image": "3dots",
+				"handlerLine": 6,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:47.483 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (534, 310)",
+				"image": "(TEXT:\"New tab\")",
+				"handlerLine": 7,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:50.373 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (384, 770)",
+				"image": "(TEXT:\"Search or type web address\")",
+				"handlerLine": 8,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:50.615 +0530",
+				"message": "at (384, 770)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 9,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:52.856 +0530",
+				"message": "https://development-web-belk.demandware.net/[return]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 10,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_launch",
+				"timestamp": "2021-10-06 17:19:52.872 +0530",
+				"message": "SEARCHRECTANGLE = []",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 11,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:19:53.166 +0530",
+				"message": "SEARCHRECTANGLE = [[0,1200],[1080,2400]]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:23.579 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Decline offer\"). Text not found.",
+				"image": "(TEXT:\"Decline offer\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:23.610 +0530",
+				"message": "pop up not found",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:41.528 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"English\"). Text not found.",
+				"image": "(TEXT:\"English\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:41.540 +0530",
+				"message": "Laguage selection is not visible",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 12,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:43.059 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (541, 2166)",
+				"image": "(TEXT:\"See all offers\")",
+				"handlerLine": 14,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:44.378 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (566, 1490)",
+				"image": "Collapse",
+				"handlerLine": 15,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:47.067 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (356, 162)",
+				"image": "(TEXT:\"belk\")",
+				"handlerLine": 19,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:47.299 +0530",
+				"message": "SEARCHRECTANGLE = [[0,0],[540,2400]]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 20,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:49.241 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (92, 673)",
+				"image": "GuidedMenu",
+				"handlerLine": 21,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:55.253 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (79, 1030)",
+				"image": "(TEXT:\"Men\")",
+				"handlerLine": 22,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:20:59.623 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "at (155, 1311)",
+				"image": "(TEXT:\"Shoes\")",
+				"handlerLine": 24,
+				"identifier": "tap"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:21:12.280 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Casual Shoes\"). Text not found.",
+				"image": "(TEXT:\"Casual Shoes\")",
+				"handlerLine": 25,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:21:12.292 +0530",
+				"message": "didn't asked for inner category",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 28,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_guidedsearching",
+				"timestamp": "2021-10-06 17:21:12.310 +0530",
+				"message": "SEARCHRECTANGLE = []",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 30,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:12.624 +0530",
+				"message": "SEARCHRECTANGLE = [[0,480],[1080,1800]]",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:15.707 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "found at (302, 1650)",
+				"image": "(TEXT:\"Filter\")",
+				"handlerLine": 3,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:30.611 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\"). Text not found.",
+				"image": "(TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:30.634 +0530",
+				"message": "SWIPESPEED = 90",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 5,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:30.845 +0530",
+				"message": "Swiped up from (540, 1680) to (540, 720)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 6,
+				"identifier": "swipeup"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:48.873 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\"). Text not found.",
+				"image": "(TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:48.888 +0530",
+				"message": "SWIPESPEED = 90",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 5,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:21:49.104 +0530",
+				"message": "Swiped up from (540, 1680) to (540, 720)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 6,
+				"identifier": "swipeup"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:04.713 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\"). Text not found.",
+				"image": "(TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:04.734 +0530",
+				"message": "SWIPESPEED = 90",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 5,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:04.974 +0530",
+				"message": "Swiped up from (540, 1680) to (540, 720)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 6,
+				"identifier": "swipeup"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:21.241 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\"). Text not found.",
+				"image": "(TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:21.273 +0530",
+				"message": "SWIPESPEED = 90",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 5,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:21.489 +0530",
+				"message": "Swiped up from (540, 1680) to (540, 720)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 6,
+				"identifier": "swipeup"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:36.887 +0530",
+				"scriptName": "Scenario_1.script",
+				"message": "Unable to Find Image (TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\"). Text not found.",
+				"image": "(TEXT:\"Under Armour Charged Pursuit 2 Running Shoes\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:36.902 +0530",
+				"message": "SWIPESPEED = 90",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 5,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:37.119 +0530",
+				"message": "Swiped up from (540, 1680) to (540, 720)",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 6,
+				"identifier": "swipeup"
+			},
+		{
+				"handlerName": "on_guidedproduct",
+				"timestamp": "2021-10-06 17:22:50.428 +0530",
+				"message": "Searching For Image: OCR Error: Operation was aborted",
+				"scriptName": "Scenario_1.script",
+				"handlerLine": 8,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"194.884\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2021-10-06 17:19:35 +0530\", Successes:\"0\", TestCase:\"master.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2021-10-06 17:22:50.597 +0530"
+			},
+		{
+				"message": "Execution Time 0:03:14 master.script",
+				"identifier": "ABORTED",
+				"timestamp": "2021-10-06 17:22:50.666 +0530"
+			}
+	],
+	"createdTimestamp": "2021-10-06 17:19:35.698 +0530"
+}

@@ -1,0 +1,46 @@
+﻿2021-10-06 17:19:35.694 +0530	START		Running master.script
+2021-10-06 17:19:36.398 +0530	swipeup		Swiped up from (540, 1680) to (540, 720)	1	on_launch	Scenario_1.script
+2021-10-06 17:19:36.580 +0530	set		SEARCHRECTANGLE = [[0,0],[1080,1200]]	3	on_launch	Scenario_1.script
+2021-10-06 17:19:40.156 +0530	tap	(TEXT:"Google")	at (415, 547)	4	on_launch	Scenario_1.script
+2021-10-06 17:19:42.372 +0530	tap	(TEXT:"Chrome")	at (542, 1068)	5	on_launch	Scenario_1.script
+2021-10-06 17:19:45.163 +0530	tap	3dots	at (994, 160)	6	on_launch	Scenario_1.script
+2021-10-06 17:19:47.483 +0530	tap	(TEXT:"New tab")	at (534, 310)	7	on_launch	Scenario_1.script
+2021-10-06 17:19:50.373 +0530	waitfor	(TEXT:"Search or type web address")	found at (384, 770)	8	on_launch	Scenario_1.script
+2021-10-06 17:19:50.615 +0530	tap		at (384, 770)	9	on_launch	Scenario_1.script
+2021-10-06 17:19:52.856 +0530	typetext		https://development-web-belk.demandware.net/[return]	10	on_launch	Scenario_1.script
+2021-10-06 17:19:52.872 +0530	set		SEARCHRECTANGLE = []	11	on_launch	Scenario_1.script
+2021-10-06 17:19:53.166 +0530	set		SEARCHRECTANGLE = [[0,1200],[1080,2400]]	2	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:23.579 +0530	imagefound	(TEXT:"Decline offer")	Unable to Find Image (TEXT:"Decline offer"). Text not found.	3	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:23.610 +0530	Log		pop up not found	6	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:41.528 +0530	imagefound	(TEXT:"English")	Unable to Find Image (TEXT:"English"). Text not found.	8	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:41.540 +0530	Log		Laguage selection is not visible	12	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:43.059 +0530	imagefound	(TEXT:"See all offers")	found at (541, 2166)	14	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:44.378 +0530	tap	Collapse	at (566, 1490)	15	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:47.067 +0530	waitfor	(TEXT:"belk")	found at (356, 162)	19	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:47.299 +0530	set		SEARCHRECTANGLE = [[0,0],[540,2400]]	20	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:49.241 +0530	tap	GuidedMenu	at (92, 673)	21	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:55.253 +0530	tap	(TEXT:"Men")	at (79, 1030)	22	on_guidedsearching	Scenario_1.script
+2021-10-06 17:20:59.623 +0530	tap	(TEXT:"Shoes")	at (155, 1311)	24	on_guidedsearching	Scenario_1.script
+2021-10-06 17:21:12.280 +0530	imagefound	(TEXT:"Casual Shoes")	Unable to Find Image (TEXT:"Casual Shoes"). Text not found.	25	on_guidedsearching	Scenario_1.script
+2021-10-06 17:21:12.292 +0530	Log		didn't asked for inner category	28	on_guidedsearching	Scenario_1.script
+2021-10-06 17:21:12.310 +0530	set		SEARCHRECTANGLE = []	30	on_guidedsearching	Scenario_1.script
+2021-10-06 17:21:12.624 +0530	set		SEARCHRECTANGLE = [[0,480],[1080,1800]]	2	on_guidedproduct	Scenario_1.script
+2021-10-06 17:21:15.707 +0530	waitfor	(TEXT:"Filter")	found at (302, 1650)	3	on_guidedproduct	Scenario_1.script
+2021-10-06 17:21:30.611 +0530	imagefound	(TEXT:"Under Armour Charged Pursuit 2 Running Shoes")	Unable to Find Image (TEXT:"Under Armour Charged Pursuit 2 Running Shoes"). Text not found.	4	on_guidedproduct	Scenario_1.script
+2021-10-06 17:21:30.634 +0530	set		SWIPESPEED = 90	5	on_guidedproduct	Scenario_1.script
+2021-10-06 17:21:30.845 +0530	swipeup		Swiped up from (540, 1680) to (540, 720)	6	on_guidedproduct	Scenario_1.script
+2021-10-06 17:21:48.873 +0530	imagefound	(TEXT:"Under Armour Charged Pursuit 2 Running Shoes")	Unable to Find Image (TEXT:"Under Armour Charged Pursuit 2 Running Shoes"). Text not found.	8	on_guidedproduct	Scenario_1.script
+2021-10-06 17:21:48.888 +0530	set		SWIPESPEED = 90	5	on_guidedproduct	Scenario_1.script
+2021-10-06 17:21:49.104 +0530	swipeup		Swiped up from (540, 1680) to (540, 720)	6	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:04.713 +0530	imagefound	(TEXT:"Under Armour Charged Pursuit 2 Running Shoes")	Unable to Find Image (TEXT:"Under Armour Charged Pursuit 2 Running Shoes"). Text not found.	8	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:04.734 +0530	set		SWIPESPEED = 90	5	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:04.974 +0530	swipeup		Swiped up from (540, 1680) to (540, 720)	6	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:21.241 +0530	imagefound	(TEXT:"Under Armour Charged Pursuit 2 Running Shoes")	Unable to Find Image (TEXT:"Under Armour Charged Pursuit 2 Running Shoes"). Text not found.	8	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:21.273 +0530	set		SWIPESPEED = 90	5	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:21.489 +0530	swipeup		Swiped up from (540, 1680) to (540, 720)	6	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:36.887 +0530	imagefound	(TEXT:"Under Armour Charged Pursuit 2 Running Shoes")	Unable to Find Image (TEXT:"Under Armour Charged Pursuit 2 Running Shoes"). Text not found.	8	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:36.902 +0530	set		SWIPESPEED = 90	5	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:37.119 +0530	swipeup		Swiped up from (540, 1680) to (540, 720)	6	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:50.428 +0530	Exception		Searching For Image: OCR Error: Operation was aborted	8	on_guidedproduct	Scenario_1.script
+2021-10-06 17:22:50.597 +0530	EndTestCase		(Duration:"194.884", Errors:"1", Exceptions:"1", StartTime:"2021-10-06 17:19:35 +0530", Successes:"0", TestCase:"master.script", Warnings:"0")
+2021-10-06 17:22:50.666 +0530	ABORTED		Execution Time 0:03:14 master.script

@@ -1,0 +1,24 @@
+﻿
+Scenario_1.launch "https://development-web-belk.demandware.net/"
+Scenario_1.GuidedSearching "Men","Shoes","Casual Shoes"
+Scenario_1.GuidedProduct "Under Armour Charged Pursuit 2 Running Shoes","9M"
+
+Scenario_1.Search
+Scenario_1.SearchProduct1 "mens shorts","Twill Shorts","34"
+Scenario_1.Search
+Scenario_1.SearchProduct2 "baby boy clothes","Ocean & Coast Baby Boys Fishing Romper","12 Months"
+Scenario_1.Checkout "Ocean & Coast Baby Boys Fishing Romper"
+Scenario_1.payment
+Scenario_1.PlaceOrder
+
+
+
+
+Scenario_2.launch
+Scenario_2.Login "belktestqe001@gmail.com","Belk123$"
+Scenario_2.GuidedSearching "Men","Shoes","Casual Shoes"
+Scenario_2.GuidedProduct "Skechers Avillo Slip On Shoes","9M"
+Scenario_2.SearchProduct1 "mens shorts","Twill Shorts","34"
+Scenario_2.SearchProduct2 "baby boy clothes","Ocean & Coast Baby Boys Fishing Romper","12 Months"
+Scenario_2.Checkout "Skechers Avillo Slip On Shoes","28217"
+

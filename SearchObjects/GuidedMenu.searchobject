@@ -1,0 +1,59 @@
+{
+	"lastmodifieddate": 1633504406.687,
+	"lastfoundlocation": [
+		54,
+		271,
+		77,
+		83
+	],
+	"originalcapturelocation": [
+		57,
+		344,
+		77,
+		83
+	],
+	"createddate": 1633504406.687,
+	"lastfounddate": 1633696757.582,
+	"testlocationdata": [
+		{
+				"connectionportnum": 7000,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[38,41]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"device_os": "Android",
+					"manufacturer": "samsung",
+					"SystemNative2BuildNumber": "N/A",
+					"EggSensorBufferSize": "1024",
+					"type": "SystemNative2",
+					"device": "x1s",
+					"EggSensorCompileTime": "RELEASE",
+					"product": "x1sxx",
+					"EggSensorBuildNumber": "2107292126",
+					"device_os_version": "11",
+					"SystemNative2BuildTime": "Jul 29 2021, 21:30:43",
+					"protocol_version": "2.6",
+					"endianess": "little-endian",
+					"serial": "RF8N315319K"
+				},
+				"name": "GuidedMenu.png",
+				"connectionname": "VarMobile",
+				"type": 1,
+				"capturerect": [
+					57,
+					344,
+					77,
+					83
+				],
+				"connectionserverid": "192.168.1.230"
+			}
+	],
+	"name": "GuidedMenu"
+}

@@ -1,0 +1,351 @@
+﻿to launch url
+	
+	
+	do "swipeup" 
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	TAP text:"Google",waitfor:15
+	tap text:"Chrome",waitfor:20
+	tap image:"3dots",waitfor:25
+	tap text:"New tab",waitfor:30
+	waitfor 100,text:"Search or type web address",caseSensitive:yes
+	tap FoundImageLocation()
+	typetext url,return
+	set the SearchRectangle to []
+end launch
+
+
+
+
+to handle GuidedSearching ProductCategory,subcategory,subcategory1
+	set the  SearchRectangle to screen_part_handler.ScreenPart("BottomHalf")
+	(*if ImageFound(text:"Decline offer", waitFor:10,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle"))
+		tap FoundImageLocation()
+	else
+		log "pop up not found"
+	end if
+	if ImageFound(text:"English", waitFor:5)
+		tap image:"3dots",waitfor:10
+		tap text:"Never translate this page",waitfor:15,textDifference:"2"
+	else
+		log "Laguage selection is not visible"
+	end if
+	if ImageFound(text:"See all offers", waitFor:25)
+		tap image:"Collapse",waitfor:30
+	else
+		log "Offers message not found"
+	end if*)
+	
+	set the SearchRectangle to	screen_part_handler.ScreenPart("LeftHalf")
+	waitfor 100,text:"Search",caseSensitive:yes
+	wait 3
+	tap image:"GuidedMenu",waitfor:20
+	put ImageRectangle(text:"Menu", waitFor:20,caseSensitive:yes) into rect
+	set the SearchRectangle to rect+[0,35,700,1800]
+	tap text:ProductCategory,waitfor:25,caseSensitive:yes
+	wait 5
+	tap text:subcategory,caseSensitive:yes,waitfor:25
+	wait 3
+	if ImageFound(text:subcategory1, waitFor:10)
+		tap FoundImageLocation()
+	else
+		log "didn't asked for inner category"
+	end if
+	set the SearchRectangle to []
+end GuidedSearching
+
+
+
+to handle GuidedProduct ProductName1,size1
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	waitfor 100,text:"Filter",caseSensitive:yes
+	Repeat until ImageFound(text:ProductName1,caseSensitive:yes,textDifference:"2", waitFor:10,ignoreSpaces:yes)
+		set the swipeSpeed to 100
+		Swipeup 
+		wait 2
+	End repeat
+	tap FoundImageLocation()
+	//tap text:"Filters",waitfor:15,caseSensitive:yes,hotspot:[15,30]
+	Repeat until ImageFound(text:"Add to Bag", waitFor:5,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle"))
+		set the swipeSpeed to 120
+Swipeup 
+		wait 3
+	End repeat
+	tap text:"Size",caseSensitive:yes,hotspot:[15,50],waitfor:10
+	tap text:size1,caseSensitive:yes,waitfor:40
+	wait 2
+	set the swipeSpeed to 120
+	do "Swipeup" 
+	wait 5
+	tap text:"Add to Bag",waitfor:45,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle")
+	waitfor 50,text:"Continue Shopping"
+	tap FoundImageLocation()
+	set the SearchRectangle to []
+end GuidedProduct
+
+
+to Search 
+	(*set the  SearchRectangle to screen_part_handler.ScreenPart("BottomHalf")
+	if ImageFound(text:"Decline offer", waitFor:25,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle"))
+		tap FoundImageLocation()
+	else
+		log "pop up not found"
+	end if
+	if ImageFound(text:"English", waitFor:15)
+		tap image:"3dots",waitfor:10
+		tap text:"Never translate this page",waitfor:15,textDifference:"2"
+	else
+		log "Laguage selection is not visible"
+	end if
+	if ImageFound(text:"See all offers", waitFor:25)
+		tap image:"Collapse",waitfor:20
+	else
+		log "Offers message not found"
+	end if*)
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	tap text:"Search",waitfor:15
+	set the SearchRectangle  to []
+end Search
+
+
+to handle SearchProduct1 SearchItem1,ProductName2,size2
+
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	tap text:"Search",waitfor:25
+	set the SearchRectangle  to []
+	wait 2
+	typetext SearchItem1,return
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	
+	waitfor 100,text:"Filter",caseSensitive:yes
+	Repeat until ImageFound(text:ProductName2,ignoreSpaces:yes, waitFor:10)
+		set the swipeSpeed to 90
+		
+		swipeup 
+		wait 2
+	End repeat
+	tap FoundImageLocation()
+	//tap text:"Filter",waitfor:15,caseSensitive:yes,hotspot:[15,30]
+	
+	Repeat until ImageFound(text:"Add to Bag", waitFor:5,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle"))
+		set the swipeSpeed to 100
+		Swipeup 
+		wait 3
+	End repeat
+	tap text:"Size",caseSensitive:yes,hotspot:[15,50],waitfor:10
+	tap text:size2,caseSensitive:yes,waitfor:40
+	wait 1
+	set the swipeSpeed to 110
+	do "Swipeup" 
+	wait 4
+	tap text:"Add to Bag",waitfor:45,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle")
+	waitfor 50,text:"Continue Shopping"
+	tap FoundImageLocation()
+	set the SearchRectangle to []
+end SearchProduct1
+
+
+
+to handle SearchProduct2 SearchItem2,ProductName3,size3
+	
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	tap text:"Search",waitfor:15
+	set the SearchRectangle  to []
+	wait 2
+	typetext SearchItem2,return
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	
+	waitfor 100,text:"Filter",caseSensitive:yes
+	Repeat until ImageFound(text:ProductName3,ignoreSpaces:yes, textDifference:"2",waitFor:5)
+		
+		set the swipeSpeed to 60
+		swipeup 
+		wait 3
+	End repeat
+	tap FoundImageLocation()
+	//tap text:"Filter",waitfor:15,caseSensitive:yes,hotspot:[15,30]
+	Repeat until ImageFound(text:"Add to Bag", waitFor:10,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle"))
+		set the swipeSpeed to 100
+		swipeup 
+		wait 3
+	End repeat
+	tap text:"Size",caseSensitive:yes,hotspot:[15,50],waitfor:10
+	tap text:size3,waitfor:15
+	wait 2
+	set the swipeSpeed to 110
+	do "Swipeup" 
+	wait 4
+	tap text:"Add to Bag",waitfor:45,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle")
+	set the SearchRectangle to []
+end SearchProduct2
+
+
+
+
+
+to handle Checkout ProductName3
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	
+	waitfor 50,text:"View Bag & Checkout",textDifference:"2",caseSensitive:yes
+	tap FoundImageLocation()
+	set the SearchRectangle to []
+	Repeat until ImageFound(text:"Ship it", waitFor:8,textDifference:"1")
+		set the swipespeed to 90
+		Swipeup
+		wait 3
+	End repeat
+	tap text:"Remove",waitfor:15,caseSensitive:yes
+	waitfor 100,text:"Estimated Total"
+	if ImageFound(text:"has been removed", waitFor:10,SearchRectangle:screen_part_handler.ScreenPart("TopHalf"))
+		log "item is removed"
+	else
+		log "item is not removed"
+	end if
+	Repeat until ImageFound(text:"Ship it", waitFor:8,textDifference:"1")
+		set the swipespeed to 90
+		Swipeup
+		wait 3
+	End repeat
+	
+	tap text:"Edit",waitfor:25
+	waitfor 50,text:"Color",SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	(*set the swipeSpeed to 70
+	do "swipeup"
+	tap text:"Color",waitfor:15,hotspot:[60,35]*)
+	wait 3
+	set the swipeSpeed to 80
+	do "swipeup"
+	wait 3
+	tap text:"Qty",caseSensitive:yes,hotspot:[4,45]
+	wait 4
+	do "swipedown"
+	wait 2
+	tap text:"2",waitfor:15,SearchRectangle:screen_part_handler.ScreenPart("LeftHalf")
+	waitfor 50,text:"Qty"
+	do "Swipeup" 
+	wait 3
+	tap text:"Update Shopping Bag",waitfor:20
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	Repeat until ImageFound(text:"Enter your code here",caseSensitive:yes,waitFor:5)
+		set the swipeSpeed to 80
+		Swipeup
+		wait 3
+End repeat
+click FoundImageLocation()
+typetext "EXTRAEXTRA", return
+if ImageFound(text:"Please enter a valid coupon code", waitFor:10)
+	log "Coupon code entered is invalid"
+else if ImageFound(text:"Applied", waitFor:10)
+	log "Coupon applied"
+else
+	log "Coupon code is invalid"
+end if
+set the SearchRectangle to []
+Repeat until ImageFound(text:"Secure Checkout",caseSensitive:yes,waitFor:10)
+	set the swipespeed to 100
+	Swipeup
+	wait 4
+End repeat
+tap FoundImageLocation()
+wait 7
+waitfor 100,text:"Checkout as Guest",SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+tap FoundImageLocation()
+waitfor 100,text:"Shipping Address"
+tap text:"First Name",waitfor:10,hotspot:[10,20]
+set the nextKeyDelay to 0.1
+typetext "var",tabkey
+typetext "var",tabkey
+typetext "2801 W Tyvola Rd, Charlotte, NC 28217 ",tabkey
+typetext "address2",tabkey
+typetext "hyd"
+tap text:"Select",waitfor:10
+tap text:"Alabama",waitfor:10
+typetext tabkey
+typetext "28217",tabkey
+typetext "7876887678"
+
+Repeat until ImageFound(text:"Continue to Payment", waitFor:5)
+	set the swipespeed to 80
+	swipeup
+End repeat
+tap FoundImageLocation()
+end Checkout
+
+
+
+to payment
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	if ImageFound(text:"Edit Address", waitFor:30)
+		tap text:"Continue",waitfor:10,caseSensitive:yes
+	else
+		log "Verify your address not found"
+	end if
+	waitfor 100,text:"Payment Method"
+	set the SearchRectangle to []
+	tap text:"Name on Card",waitfor:25,hotspot:[0,20]
+	typetext "UserName"
+	tap text:"Card Number",waitfor:25,hotspot:[0,20]
+	typetext "4111111111111111"
+	tap text:"Select Month",waitfor:20
+	tap text:"January",waitfor:40,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("LeftHalf")
+	tap text:"Select Year",waitfor:20
+	tap text:"2025",waitfor:45
+	tap text:"Security Code",waitfor:20,hotspot:[10,26]
+	set the nextKeyDelay to 0.2
+	typetext "123",
+	typetext return
+	tap text:"Email",hotspot:[5,20],waitfor:20
+	typetext "belktestqe001@gmail.com"
+	typetext return
+	
+	set the SearchRectangle to []
+end payment
+
+to PlaceOrder
+	
+	
+	if ImageFound(text:"No, thanks", waitFor:15,textDifference:"2",ignoreSpaces:yes,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf"))
+		click FoundImageLocation()
+	else
+		log "Card Data saving pop up not found"
+	end if
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	waitfor 100,text:"Return to Shopping Bag",caseSensitive:yes
+	Repeat until  ImageFound(text:"Place Order", waitFor:10,caseSensitive:yes)
+		set the swipeSpeed to 80
+		swipeup
+		wait 4
+	End repeat
+	tap FoundImageLocation()
+	if ImageFound(text:"Thank you for your order", waitFor:25)
+		log "order is placed"
+	else
+		log "order is not placed"
+	end if
+	set the SearchRectangle to []
+end PlaceOrder
+
+
+
+
+
+
+
+to handle Mail
+	click image :"HomeButton",waitfor:10,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	do "swipeup" 
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	TAP text:"Google",waitfor:15
+	tap text:"Gmail",waitfor:20
+	if ImageFound(text:"GOT IT", waitFor:10,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf"))
+	tap FoundImageLocation()
+	end if
+	tap text:"Add an email address",waitfor:10
+	waitfor 100,text:"Set up email"
+	tap text:"Google",waitfor:10
+	waitfor 100,text:"Email or phone"
+	tap FoundImageLocation()
+	typetext "belktestqe001@gmail.com",return
+	waitfor 100,text:"Enter your password"
+	typetext "Belk123$",return
+	
+end Mail

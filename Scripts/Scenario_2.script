@@ -1,0 +1,276 @@
+﻿to launch 
+	do "swipeup" 
+	if ImageFound(text:"Belk Dev", waitFor:10,caseSensitive:yes)
+		tap FoundImageLocation()
+	else
+		do "SwipeLeft "
+		tap text:"Belk Dev",waitfor:45,caseSensitive:yes
+	end if
+	
+end launch
+
+
+
+
+to Login username,password
+
+	tap image:"LoginButton",waitfor:20,SearchRectangle:screen_part_handler.ScreenPart("BottomRightQuadrant")
+	set the  SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")	
+	if ImageFound(text:"Skip", waitFor:10)
+		tap FoundImageLocation()
+	end if
+	tap text:"Create Account",hotspot:[0,-100]
+	//tap text:"Sign In",waitfor:40,caseSensitive:yes
+	tap text:"Email",waitfor:20,hotspot:[10,35]
+	typetext username
+	tap text:"Password",waitfor:20,hotspot:[10,25]
+	typetext password
+	set the nextKeyDelay to 0.2
+	typetext tabkey,tabkey,return
+	set the SearchRectangle to screen_part_handler.ScreenPart("BottomHalf")
+	if ImageFound(text:"Turn on Location Services", waitFor:50)
+		tap text:"Not Now",waitfor:70,caseSensitive:yes
+	else
+		log "Location services pop up not rised"
+	end if
+	set the SearchRectangle to []
+
+end Login
+
+
+
+
+to  GuidedSearching ProductCategory,subcategory,subcategory1
+	if ImageFound(text:"Skip", waitFor:10,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle"))
+		tap FoundImageLocation()
+	end if
+	tap image:"shop",caseSensitive:yes,waitfor:60,SearchRectangle:screen_part_handler.ScreenPart("BottomLeftQuadrant")
+	waitfor 100,text:"What can we help you find?",caseSensitive:yes,textDifference:"1",SearchRectangle:screen_part_handler.ScreenPart("TopHalf")
+	moveto FoundImageLocation()
+	wait 2
+	Repeat until ImageFound(text:ProductCategory, waitFor:10,caseSensitive:yes)
+		set the swipeSpeed to 80
+		swipeup
+		wait 1
+	End repeat
+	
+	tap FoundImageLocation()
+	wait 3
+	Repeat until ImageFound(text:subcategory, waitFor:10)
+		set the swipeSpeed to 80
+		swipeup
+		wait 1
+	End repeat
+	
+	tap FoundImageLocation()
+	if ImageFound(text:subcategory1, waitFor:10)
+		tap FoundImageLocation()
+	else
+		log "didn't asked for inner category"
+	end if
+	set the SearchRectangle to []
+end GuidedSearching
+
+
+
+to  GuidedProduct ProductName1,size1
+	
+	Repeat until ImageFound(text:ProductName1,caseSensitive:yes,textDifference:"3", waitFor:10,ignoreSpaces:yes)
+		set the swipeSpeed to 120
+		Swipeup 
+		wait 2
+	End repeat
+	tap FoundImageLocation()
+	
+	set the SearchRectangle to screen_part_handler.ScreenPart("BottomHalf")
+	waitfor 100,text:"Add to Bag"
+	tap text:"Select Size",caseSensitive:yes
+	waitfor 100,text:"Select a Size",SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle")
+	tap text:size1,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("LeftHalf")
+	wait 3
+	tap text:"Add to Bag",waitfor:15,caseSensitive:yes
+	waitfor 100,text:"You May Also Like",caseSensitive:yes
+	wait 2
+	tap text:"View Bag",waitfor:30,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle")
+	waitfor 50,text:"Proceed To Checkout",caseSensitive:yes
+	set the SearchRectangle to []
+end GuidedProduct
+
+
+to  SearchProduct1 SearchItem1,ProductName2,size2
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	tap text:"Home",waitfor:20,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	waitfor 100,text:"What can we help you find?",caseSensitive:yes,textDifference:"1"
+	tap FoundImageLocation()
+	wait 2
+	set the nextKeyDelay to 0.2
+	typetext SearchItem1,return
+	waitfor 100,text:"Filter",caseSensitive:yes
+	wait 2
+	tap item 2 of EveryImageLocation(image:"Favourites",waitfor:20)
+	set the SearchRectangle  to []
+	
+	
+	Repeat until ImageFound(text:ProductName2,ignoreSpaces:yes, waitFor:10,textDifference:"1",SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle"))
+		set the swipeSpeed to 110
+		
+		swipeup 
+		wait 2
+	End repeat
+	tap FoundImageLocation()
+	set the SearchRectangle to screen_part_handler.ScreenPart("BottomHalf")
+	tap text:"Select Size",caseSensitive:yes,waitfor:30
+	waitfor 100,text:"Select a Size",SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle")
+	tap text:size2,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("LeftHalf")
+	wait 2
+	tap text:"Add to Bag",waitfor:15,caseSensitive:yes
+	waitfor 100,text:"You May Also Like",caseSensitive:yes
+	wait 2
+	tap text:"View Bag",waitfor:30,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle")
+	waitfor 50,text:"Proceed To Checkout",caseSensitive:yes
+	set the SearchRectangle to []
+end SearchProduct1
+
+
+
+
+
+
+to  SearchProduct2 SearchItem2,ProductName3,size3
+
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	tap text:"Home",waitfor:20,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	waitfor 100,text:"What can we help you find?",caseSensitive:yes,textDifference:"1"
+	tap FoundImageLocation()
+	wait 1
+	typetext SearchItem2,return
+	waitfor 100,text:"Filter",caseSensitive:yes
+	
+	set the SearchRectangle  to []
+
+
+	Repeat until ImageFound(text:ProductName3, waitFor:10,textDifference:"2",caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle"))
+		set the swipeSpeed to 110
+		
+		swipeup 
+		wait 2
+	End repeat
+	tap FoundImageLocation()
+	set the SearchRectangle to screen_part_handler.ScreenPart("BottomHalf")
+	tap text:"Select Size",caseSensitive:yes
+	waitfor 100,text:"Select a Size",SearchRectangle:screen_part_handler.ScreenPart("VerticalMiddle")
+	tap text:size3,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("LeftHalf")
+	wait 2
+	tap text:"Add to Bag",waitfor:15,caseSensitive:yes
+	waitfor 100,text:"You May Also Like",caseSensitive:yes
+	wait 2
+	tap text:"View Bag",waitfor:30,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle")
+	waitfor 50,text:"Proceed To Checkout",caseSensitive:yes
+	set the SearchRectangle to []
+end SearchProduct2
+
+
+
+to  Checkout  ZIPCode,ProductName3
+	set the SearchRectangle to screen_part_handler.ScreenPart("BottomHalf")
+	tap image:"LoginButton",waitfor:20
+	tap FoundImageLocation()
+	tap text:"Favorites",caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("HorizontalMiddle")
+	tap text:"Add to Bag",SearchRectangle:screen_part_handler.ScreenPart("TopHalf")
+	waitfor 100,text:"You May Also Like",caseSensitive:yes
+	wait 2
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	tap text:"View Bag",waitfor:30,caseSensitive:yes
+	
+	tap text:"Shipping",waitfor:20,caseSensitive:yes
+	wait 3
+	set the swipeSpeed to 110
+	do "swipeup"
+	wait 3
+	tap text:"Free Pickup",waitfor:25,caseSensitive:yes
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	wait 3
+	waitfor 50,text:"ZIP Code",caseSensitive:yes
+	tap FoundImageLocation()
+	typetext ZIPCode,return
+	if ImageFound(text:"Pick Up Here", waitFor:30,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf"))
+		tap FoundImageLocation()
+	else
+		log "Zip code entered is invalid/ not deliverable to that zip code"
+		tap text:"Cancel",waitfor:30,caseSensitive:yes
+	end if
+	
+	waitfor 100,text:"Edit Bag",caseSensitive:yes
+	tap FoundImageLocation()
+	waitfor 100,text:"Shipping"
+	set the SearchRectangle to empty
+	
+	put ImageRectangle(text:ProductName3, waitFor:20,textDifference:"2") into rect
+	tap text:"Remove",caseSensitive:yes,waitfor:15,SearchRectangle:rect+[0,-120,170,170]
+	wait 3
+	if ImageFound(imageName:"plusQty", waitFor:15)
+		tap FoundImageLocation()
+	else
+		log "Quantity increse button is disabled"
+	end if
+	tap text:"Done",waitfor:25,SearchRectangle:screen_part_handler.ScreenPart("TopRightQuadrant")
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	if ImageFound(text:":Qty: 2", waitFor:15,ignoreSpaces:yes,textDifference:"1")
+		log "Quantity of the product increased"
+	else
+		log "Quantity button is disabled"
+	end if
+	
+	
+	Repeat until  ImageFound(text:"Coupon Code", waitFor:7)
+		set swipeSpeed to 100
+		swipeup
+		wait 3
+	End repeat
+	tap FoundImageLocation()
+	wait 2
+	tap text:"Enter Coupon Code",waitfor:30,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	typetext "EXTRAEXTRA"
+	wait 2
+	typetext tabkey,return
+	set the SearchRectangle to screen_part_handler.ScreenPart("HorizontalMiddle")
+	if ImageFound(text:"Invalid coupon code", waitFor:15)
+		tap text:"OK",caseSensitive:yes,waitfor:20
+		log "Coupon code entered is invalid"
+	else if ImageFound(text:"Applied", waitFor:5)
+		log "Coupon applied"
+	end if
+	tap text:"Add New Coupon",caseSensitive:yes,waitfor:50,hotspot:[0,-200]
+	
+	tap text:"Proceed To Checkout",caseSensitive:yes,waitfor:20,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	Repeat until ImageFound(text:"Place Order", waitFor:7,caseSensitive:yes)
+		SwipeUp 
+		wait 2
+	End repeat
+	tap text:"Security Code",caseSensitive:yes,waitfor:15,hotspot:[20,50]
+	typetext "123"
+	tap text:"Place Order",waitfor:15,caseSensitive:yes
+	(*tap text:"Place Order",waitfor:20,caseSensitive:yes
+	tap text:"CVV Code",caseSensitive:yes,waitfor:10
+	typetext "123"
+	wait 2
+	tap text:"Place Order",waitfor:20,caseSensitive:yes*)
+	set the SearchRectangle to screen_part_handler.ScreenPart("TopHalf")
+	if ImageFound(text:"Thank you for your order", waitFor:25)
+		log "order is placed"
+	else
+		log "order is not placed"
+	end if
+	put ImageRectangle(text:"Thank you for your order", waitFor:15) into rect
+	put readtext(rect+[390,0,350,0]) into OrderNumber
+	//tap text:"Continue Shopping",waitfor:15,caseSensitive:yes,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	tap ImageFound(imageName:"Cross", waitFor:15)
+	tap image:"LoginButton",waitfor:15,SearchRectangle:screen_part_handler.ScreenPart("BottomHalf")
+	tap FoundImageLocation()
+	tap text:"My Orders",caseSensitive:yes,waitfor:20
+	if ImageFound(text:"Order Number:"&&OrderNumber, waitFor:15)
+		log "Order history is verified"
+	else
+		log "order history is not verified"
+	end if
+end Checkout
